@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoNetCore.UI.Site", "src\LB.UI.Site\CursoNetCore.UI.Site.csproj", "{3EB144BD-900C-49C4-A609-FCDD4EB61CFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB144BD-900C-49C4-A609-FCDD4EB61CFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB144BD-900C-49C4-A609-FCDD4EB61CFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB144BD-900C-49C4-A609-FCDD4EB61CFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB144BD-900C-49C4-A609-FCDD4EB61CFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78957749-0D71-4C4E-8DCA-25CB5AE19A52}
+	EndGlobalSection
+EndGlobal
