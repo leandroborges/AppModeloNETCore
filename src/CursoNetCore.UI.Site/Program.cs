@@ -18,7 +18,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-//app.UseStaticFiles();
+app.UseStaticFiles(); //carregar arquivos css e státicos
 
 //app.UseRouting();
 
