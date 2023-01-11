@@ -1,1 +1,6 @@
-﻿Olá, aluno!
+﻿@using static CursoNetCore.UI.Site.Data.PedidoRepository;
+@inject IPedidoRepository PedidoRepository
+
+Olá, aluno!
+
+@PedidoRepository.ObterPedido().Id
