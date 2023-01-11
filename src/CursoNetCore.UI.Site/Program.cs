@@ -1,4 +1,5 @@
 using CursoNetCore.UI.Site.Data;
+using CursoNetCore.UI.Site.Servicos;
 using Microsoft.AspNetCore.Mvc.Razor;
 using static CursoNetCore.UI.Site.Data.PedidoRepository;
 
@@ -13,6 +14,11 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
 });
 
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
+
+builder.Services.AddTransient<IOperacaoTransient, Operacao>();
+builder.Services.AddScoped<IOperacaoScoped, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingleton, Operacao>();
+builder.Services.AddSingleton<IOperacaoSingletonInstance>(new Operacao(Guid.Empty));
 
 // Add services to the container.
 builder.Services.AddRazorPages();
