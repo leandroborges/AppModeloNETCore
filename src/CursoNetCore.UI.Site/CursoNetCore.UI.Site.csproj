@@ -7,11 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Modulos\Vendas\Data\" />
+    <Folder Include="Modulos\Vendas\Models\" />
+    <Folder Include="Modulos\Produtos\Data\" />
+    <Folder Include="Modulos\Produtos\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
   </ItemGroup>
 
 </Project>
