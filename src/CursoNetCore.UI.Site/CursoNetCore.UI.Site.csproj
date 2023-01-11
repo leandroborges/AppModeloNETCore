@@ -7,12 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\" />
     <Folder Include="Modulos\Vendas\Data\" />
     <Folder Include="Modulos\Vendas\Models\" />
     <Folder Include="Modulos\Produtos\Data\" />
     <Folder Include="Modulos\Produtos\Models\" />
-    <Folder Include="Models\" />
   </ItemGroup>
 
   <ItemGroup>
