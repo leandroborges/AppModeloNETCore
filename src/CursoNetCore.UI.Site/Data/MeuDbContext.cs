@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CursoNetCore.UI.Site.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace CursoNetCore.UI.Site.Data
 {
@@ -9,5 +10,7 @@ namespace CursoNetCore.UI.Site.Data
         {
 
         }
+
+        public DbSet<Aluno> Alunos { get; set; }
     }
 }

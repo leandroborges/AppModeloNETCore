@@ -15,7 +15,7 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");    
 });
 
-builder.Services.AddDbContext<MeuDbContext>(options => 
+builder.Services.AddDbContext<MeuDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MeuDbContext")));
 
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
