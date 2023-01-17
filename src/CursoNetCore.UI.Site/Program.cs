@@ -1,6 +1,8 @@
 using CursoNetCore.UI.Site.Data;
 using CursoNetCore.UI.Site.Servicos;
 using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
+
 using static CursoNetCore.UI.Site.Data.PedidoRepository;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +14,9 @@ builder.Services.Configure<RazorViewEngineOptions>(options =>
     options.AreaViewLocationFormats.Add("/Modulos/{2}/Views/Shared/{0}.cshtml");
     options.AreaViewLocationFormats.Add("/Views/Shared/{0}.cshtml");    
 });
+
+builder.Services.AddDbContext<MeuDbContext>(options => 
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MeuDbContext")));
 
 builder.Services.AddTransient<IPedidoRepository, PedidoRepository>();
 
